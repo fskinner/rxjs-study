@@ -4,11 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
+  <style>
+    .app {
+      margin: 10px;
+      width: 700px;
+    }
+
+    .list-item {
+      padding: 5px;
+    }
+
+    .results .list-item {
+      border: 1px solid #ccc;
+      width: 200px;
+      list-style: none;
+    }
+  </style>
 </head>
 <body>
-  <div id="#app">
-    <input type="text" id="input" />
-    <div id="results"></div>
+  <div class="app">
+    Search: <input type="search" class="input" />
+    <ul class="results">
+    </ul>
+    <div class="result-description">
+    </div>
   </div>
   <script src="//code.jquery.com/jquery-2.1.4.js"></script>
   <script src="bundle.js"></script>
